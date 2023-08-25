@@ -16,3 +16,25 @@ img {
   display: block;
   max-width: 100%;
 }
+
+#datetime-picker{
+  border: 1px solid #ccc;
+ border-radius:3px;
+}
+#datetime-picker:focus{
+box-shadow: 0 0 8px #967c89;}
+
+.timer {
+  display:flex;
+  justify-content: space-between;
+}
+.value {
+ background-color:#ceacac;
+}
+.field {
+  display: flex;
+  flex-direction: column-reverse ;
+  align-items: center;
+  margin-right: 20px;
+  margin-top: 20px;
+}
