@@ -32,7 +32,7 @@ function newSettings() {
     textBlock.style.display = "flex";
     textBlock.style.flexDirection = "column";
 
-    titleDes.style.fontSize = "24px";
+    titleDes.style.fontSize = "40px";
     titleDes.style.fontWeight = "700";
     titleDes.style.fontWeight = "bold";
     titleDes.style.marginBottom = "10px";
@@ -91,7 +91,7 @@ function getBrred (evt) {
         
 
         elSet.infoElement.innerHTML = `
-        <img src=${url} width="600" hight="250">
+        <img src=${url} width="800" hight="250">
         </img> 
         <div name="text-block">
             <p1 name="des">${name}</p1>
