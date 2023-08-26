@@ -1,0 +1,63 @@
+body {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 20px;
+    background-color: rgb(188, 214, 202);
+}
+
+
+a {
+    color: rgb(160, 17, 17);
+}
+
+p1 {
+    color: rgb(84, 57, 184);
+}
+
+.breed-select {
+    min-width: 255px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+
+.loader {
+    width: 48px;
+        height: 48px;
+        border: 5px solid;
+        border-color: #ff3d00 transparent;
+        border-radius: 50%;
+        display: none;
+        box-sizing: border-box;
+    animation: rotate 1s linear infinite;
+}
+
+.loader::before,
+.loader::after {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    inset: 0px;
+    border-radius: 50%;
+    border: 5px solid #FFF;
+    animation: prixClipFix 2s linear infinite;
+}
+
+.loader::after {
+    border-color: #440e8a;
+    animation: prixClipFix 2s linear infinite, rotate 0.5s linear infinite reverse;
+    inset: 6px;
+}
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
